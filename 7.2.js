@@ -57,4 +57,17 @@ console.log(Math.max(...maxScore))
     // }
     // console.log(maxScore)
 
-    
+    let bestScore = [];
+let playerName = ''
+
+for (let player of players) {
+bestScore.push(player.scorePoints);
+
+let maxScore = Math.max(...bestScore) // переменная доступная только внутри цикла, для вспомогательных вычислений
+
+if (player.scorePoints === maxScore) {
+playerName = player.name
+}
+}
+console.log('Best score is ' + Math.max(...bestScore) + ' and name is ' + playerName);
+// Попробуйте разобрать пошагово данный пример)

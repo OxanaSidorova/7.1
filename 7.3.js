@@ -33,20 +33,37 @@ console.log(newButton)
 // let testButton = new Button(70,80,"Button", "blue");
 // console.log (testButton)
 
-let testButton = function (width, height, type,colour) {
-    if (width === 60) {
-        console.log("valid");
-        }
-
-    if(height===70){
-        console.log("faild");
-    }
-    if(type === "Button"){
-        console.log("valid")
-    }
-    if (colour==="red"){
-        console.log ("faild")
-    }
+function testButton(width, height, type, colour) {
+    if (newButton.props.colour==colour);
+    (newButton.props.width===width);
+    (newButton.props.height===height);
+    (newButton.props.type===type)
 }
-testButton(60, 70, "Button", "red")
+
+    console.log(testButton(70,80,"Button", "blue"))
+
+
+
+         
+
+
+    
+    // вызываем функцию и предаем аргументы (10, 20, button, "red")
+
+// let testButton = function (width, height, type,colour) {
+//     if (width === 60) {
+//         console.log("valid");
+//         }
+
+//     if(height===70){
+//         console.log("faild");
+//     }
+//     if(type === "Button"){
+//         console.log("valid")
+//     }
+//     if (colour==="red"){
+//         console.log ("faild")
+//     }
+// }
+// testButton(60, 70, "Button", "red")
 
